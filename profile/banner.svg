@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="bannerShieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="bannerShieldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="bannerCircuit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="bannerSGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="bannerGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bannerSoftGlow">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="bannerTextGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Grid pattern for background -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10b981" stroke-opacity="0.03" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bannerBg)"/>
+
+  <!-- Grid overlay -->
+  <rect width="1200" height="300" rx="16" fill="url(#grid)"/>
+
+  <!-- Decorative horizontal lines -->
+  <line x1="0" y1="40" x2="1200" y2="40" stroke="#10b981" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="0" y1="150" x2="1200" y2="150" stroke="#10b981" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="0" y1="260" x2="1200" y2="260" stroke="#10b981" stroke-opacity="0.04" stroke-width="0.5"/>
+
+  <!-- Background network nodes (decorative) -->
+  <circle cx="50" cy="60" r="2" fill="#10b981" opacity="0.15"/>
+  <circle cx="120" cy="240" r="1.5" fill="#10b981" opacity="0.1"/>
+  <circle cx="900" cy="50" r="2" fill="#10b981" opacity="0.12"/>
+  <circle cx="1050" cy="80" r="1.5" fill="#10b981" opacity="0.1"/>
+  <circle cx="1100" cy="220" r="2" fill="#10b981" opacity="0.12"/>
+  <circle cx="980" cy="250" r="1.5" fill="#10b981" opacity="0.08"/>
+  <line x1="50" y1="60" x2="120" y2="240" stroke="#10b981" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="900" y1="50" x2="1050" y2="80" stroke="#10b981" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="1050" y1="80" x2="1100" y2="220" stroke="#10b981" stroke-opacity="0.05" stroke-width="0.5"/>
+  <line x1="1100" y1="220" x2="980" y2="250" stroke="#10b981" stroke-opacity="0.05" stroke-width="0.5"/>
+
+  <!-- ======= SHIELD ICON (left side) ======= -->
+  <g transform="translate(80, 35)">
+    <!-- Shield -->
+    <path d="M75 10 L135 35 L135 95 C135 140 75 170 75 170 C75 170 15 140 15 95 L15 35 Z"
+          fill="url(#bannerShieldFill)" stroke="url(#bannerShieldGrad)" stroke-width="2.5"/>
+
+    <!-- Inner shield -->
+    <path d="M75 24 L126 45 L126 95 C126 133 75 158 75 158 C75 158 24 133 24 95 L24 45 Z"
+          fill="none" stroke="#10b981" stroke-opacity="0.12" stroke-width="0.75"/>
+
+    <!-- Circuit lines -->
+    <line x1="32" y1="58" x2="58" y2="58" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="92" y1="58" x2="118" y2="58" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="32" y1="78" x2="52" y2="78" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="98" y1="78" x2="118" y2="78" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="38" y1="98" x2="55" y2="98" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="95" y1="98" x2="112" y2="98" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="48" y1="118" x2="60" y2="118" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="90" y1="118" x2="102" y2="118" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Vertical circuit lines -->
+    <line x1="48" y1="48" x2="48" y2="65" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="102" y1="48" x2="102" y2="65" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="42" y1="88" x2="42" y2="108" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+    <line x1="108" y1="88" x2="108" y2="108" stroke="url(#bannerCircuit)" stroke-width="1" stroke-linecap="round"/>
+
+    <!-- Network nodes -->
+    <circle cx="48" cy="48" r="2.5" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="102" cy="48" r="2.5" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="32" cy="78" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="118" cy="78" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="38" cy="98" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="112" cy="98" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="48" cy="118" r="1.5" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="102" cy="118" r="1.5" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="58" cy="58" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+    <circle cx="92" cy="58" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+
+    <!-- SI Monogram -->
+    <path d="M60 72 C60 68, 63 64, 68 64 C73 64, 76 68, 76 72 C76 76, 73 80, 68 80 C63 80, 60 84, 60 88 C60 92, 63 96, 68 96 C73 96, 76 92, 76 88"
+          fill="none" stroke="#10b981" stroke-width="3.5" stroke-linecap="round" filter="url(#bannerSoftGlow)"/>
+    <line x1="85" y1="64" x2="85" y2="96" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="80" y1="64" x2="90" y2="64" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="80" y1="96" x2="90" y2="96" stroke="#f8fafc" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Connection lines -->
+    <line x1="63" y1="63" x2="56" y2="60" stroke="#10b981" stroke-opacity="0.3" stroke-width="0.6"/>
+    <line x1="88" y1="63" x2="95" y2="60" stroke="#10b981" stroke-opacity="0.3" stroke-width="0.6"/>
+    <line x1="58" y1="88" x2="48" y2="95" stroke="#10b981" stroke-opacity="0.3" stroke-width="0.6"/>
+    <line x1="92" y1="88" x2="104" y2="95" stroke="#10b981" stroke-opacity="0.3" stroke-width="0.6"/>
+
+    <!-- Top accent -->
+    <circle cx="75" cy="12" r="2" fill="#10b981" filter="url(#bannerGlow)"/>
+
+    <!-- Bottom keyhole -->
+    <circle cx="75" cy="146" r="3" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.35"/>
+    <line x1="75" y1="149" x2="75" y2="157" stroke="#10b981" stroke-width="1" stroke-opacity="0.35" stroke-linecap="round"/>
+  </g>
+
+  <!-- ======= WORDMARK ======= -->
+  <!-- "S" -->
+  <text x="268" y="168" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="-3" fill="url(#bannerSGrad)" filter="url(#bannerTextGlow)">S</text>
+
+  <!-- "I" -->
+  <text x="322" y="168" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="800" letter-spacing="-3" fill="#f8fafc">I</text>
+
+  <!-- "ntruder" -->
+  <text x="352" y="168" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="300" letter-spacing="-3" fill="#cbd5e1">ntruder</text>
+
+  <!-- Accent underline -->
+  <rect x="270" y="182" width="72" height="3" rx="1.5" fill="url(#bannerSGrad)" opacity="0.75"/>
+
+  <!-- ======= TAGLINE ======= -->
+  <text x="270" y="218" font-family="'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="6" fill="#64748b">DEFENSIVE INTELLIGENCE PLATFORM</text>
+
+  <!-- Decorative separator line -->
+  <line x1="270" y1="236" x2="780" y2="236" stroke="#10b981" stroke-opacity="0.15" stroke-width="0.5"/>
+
+  <!-- Subtle version / org info -->
+  <text x="270" y="258" font-family="monospace" font-size="11" fill="#475569" letter-spacing="1">GOVERNMENT &amp; DEFENSE</text>
+  <circle cx="420" cy="255" r="2" fill="#10b981" opacity="0.4"/>
+  <text x="430" y="258" font-family="monospace" font-size="11" fill="#475569" letter-spacing="1">ADAPT ENGINE</text>
+
+  <!-- Right side decorative element -->
+  <g transform="translate(1020, 100)">
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#10b981" stroke-opacity="0.06" stroke-width="0.75"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#10b981" stroke-opacity="0.08" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#10b981" stroke-opacity="0.1" stroke-width="0.5"/>
+    <!-- Radar sweep -->
+    <line x1="0" y1="0" x2="42" y2="-42" stroke="#10b981" stroke-opacity="0.12" stroke-width="0.75"/>
+    <circle cx="42" cy="-42" r="3" fill="#10b981" opacity="0.2"/>
+    <line x1="0" y1="0" x2="-30" y2="30" stroke="#10b981" stroke-opacity="0.08" stroke-width="0.75"/>
+    <circle cx="-30" cy="30" r="2" fill="#10b981" opacity="0.15"/>
+    <line x1="0" y1="0" x2="55" y2="20" stroke="#10b981" stroke-opacity="0.1" stroke-width="0.75"/>
+    <circle cx="55" cy="20" r="2.5" fill="#10b981" opacity="0.18"/>
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="3" fill="#10b981" opacity="0.35" filter="url(#bannerGlow)"/>
+  </g>
+
+  <!-- Corner accents -->
+  <line x1="20" y1="20" x2="50" y2="20" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" stroke-linecap="round"/>
+  <line x1="20" y1="20" x2="20" y2="50" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" stroke-linecap="round"/>
+  <line x1="1180" y1="280" x2="1150" y2="280" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" stroke-linecap="round"/>
+  <line x1="1180" y1="280" x2="1180" y2="250" stroke="#10b981" stroke-opacity="0.2" stroke-width="1" stroke-linecap="round"/>
+</svg>
