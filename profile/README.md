@@ -5,10 +5,6 @@
 <h3 align="center">Defensive Intelligence Platform</h3>
 
 <p align="center">
-  <em>Replace 12+ security tools with one platform. Powered by the ADAPT engine.</em>
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/Rust-219_crates-orange?style=flat-square&logo=rust" alt="Rust Crates"/>
   <img src="https://img.shields.io/badge/Tests-7%2C521%2B_passing-brightgreen?style=flat-square" alt="Tests"/>
   <img src="https://img.shields.io/badge/API-2%2C856_endpoints-blue?style=flat-square" alt="API"/>
